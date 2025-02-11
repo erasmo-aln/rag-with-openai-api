@@ -4,6 +4,7 @@ import chromadb
 from langchain_openai import OpenAIEmbeddings
 from openai import OpenAI
 
+
 dotenv.load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 

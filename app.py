@@ -1,7 +1,7 @@
 import streamlit as st
 from query import answer_query
 
-# Streamlit UI
+
 st.set_page_config(page_title="RAG-Powered PDF Chatbot", layout="wide")
 
 st.title("PDF Q&A Chatbot")
