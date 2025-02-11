@@ -43,7 +43,7 @@ rag-with-openai-api/
 - OpenAI API Key
 
 ### Requirements
-```python
+```
 openai==1.6.1
 langchain==0.1.9
 chromadb==0.4.22
