@@ -34,12 +34,12 @@ question = st.text_input("Ask a question about the PDFs:")
 if st.button("Get Answer"):
     if question:
         with st.spinner("Fetching relevant information..."):
-            answer, retrieved_chunks = answer_query(question, model=model, temperature=temperature, max_tokens=max_tokens, top_k=top_k)
+            answer = answer_query(question, model=model, temperature=temperature, max_tokens=max_tokens, top_k=top_k)
 
-        st.subheader("Retrieved Context:")
-        for i, chunk in enumerate(retrieved_chunks):
-            st.markdown(f"**Source {i+1}:**")
-            st.info(chunk)
+        # st.subheader("Retrieved Context:")
+        # for i, chunk in enumerate(retrieved_chunks):
+        #     st.markdown(f"**Source {i+1}:**")
+        #     st.info(chunk)
 
         st.subheader("Answer:")
         st.write(answer)
